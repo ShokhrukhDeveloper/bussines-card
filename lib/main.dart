@@ -1,107 +1,262 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MaterialApp(home: MyApp(),));
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        home: Scaffold(
-      backgroundColor: Colors.purple[700],
-      body: SafeArea(
+    return  Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.deepPurple,
+        title: Text("Space counter"),
+      ),
+      body: SingleChildScrollView(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CircleAvatar(
-              radius: 100,
-             backgroundImage: AssetImage("images/own.jpg"),
-            ),
-            SizedBox(height: 15,),
-            Text("Shoxrux Yarashov",
-            style: TextStyle(
-              fontFamily: "DeliciousHandrawn",
-              fontSize: 40,
-              color: Colors.white
-            ),
-            ),
-            SizedBox(height: 10,),
-            Text("Flutter developer",
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  padding: EdgeInsets.all(5),
+                  width: 200,
+                  height: 200,
 
-            style: TextStyle(
-              letterSpacing: 6,
-              color: Colors.white,
-              fontSize: 25,
-            ),
-            ),
-            SizedBox(
-                width: 200,
-                child: Divider(color: Colors.white,)),
-            SizedBox(height: 25,),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Image(
+                          image: AssetImage("images/own.jpg"),
+                        height: 150,
 
-            Container(
-              margin: EdgeInsets.symmetric(horizontal: 15),
-              padding: EdgeInsets.all(15),
-              color: Colors.white,
-              child: Row(
-                children: [
-                  Icon(Icons.phone,color: Colors.purple[700],),
-                  SizedBox(width: 20,),
-                  Text("+99895 888 22 66",
-                  style: TextStyle(
-                      fontSize: 23,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.deepPurple
+                      ),
+                      Text("Shoxrux",
+                      style: TextStyle(
+                        fontSize: 22
+                      ),
+                      )
+                    ],
                   ),
-                  )
-                ],
-              ),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    border: Border.all(color: Colors.black,width: 5),
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.all(5),
+                  width: 200,
+                  height: 300,
+
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Image(
+                        image: AssetImage("images/iam.jpg"),
+                        height: 150,
+
+                      ),
+                      Text("${MediaQuery.of(context).size.height}",
+                        style: TextStyle(
+                            fontSize: 22
+                        ),
+                      )
+                    ],
+                  ),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    border: Border.all(color: Colors.black,width: 5),
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                ),
+
+              ],
             ),
-            SizedBox(height: 15,),
-            Container(
-              margin: EdgeInsets.symmetric(horizontal: 15),
-              padding: EdgeInsets.all(15),
-              color: Colors.white,
-              child: Row(
-                children: [
-                  Icon(Icons.mail,color: Colors.purple[700],),
-                  SizedBox(width: 20,),
-                  Text("yarashovshokhrukh@gmail.com",
-                    style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.deepPurple
-                    ),
-                  )
-                ],
-              ),
+            SizedBox(height: 20,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  padding: EdgeInsets.all(5),
+                  width: 200,
+                  height: 200,
+
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Image(
+                        image: AssetImage("images/child.jpg"),
+                        height: 150,
+
+                      ),
+                      Text("childdflsdhf",
+                        style: TextStyle(
+                            fontSize: 22
+                        ),
+                      )
+                    ],
+                  ),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    border: Border.all(color: Colors.black,width: 5),
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.all(5),
+                  width: 200,
+                  height: 200,
+
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Image(
+                        image: AssetImage("images/unst.png"),
+                        height: 150,
+
+                      ),
+                      Text("d;lklasd",
+                        style: TextStyle(
+                            fontSize: 22
+                        ),
+                      )
+                    ],
+                  ),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    border: Border.all(color: Colors.black,width: 5),
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                ),
+
+              ],
             ),
-            SizedBox(height: 15,),
-            Container(
-              margin: EdgeInsets.symmetric(horizontal: 15),
-              padding: EdgeInsets.all(15),
-              color: Colors.white,
-              child: Row(
-                children: [
-                  Icon(Icons.telegram,color: Colors.purple[700],),
-                  SizedBox(width: 20,),
-                  Text("@uz_best",
-                    style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.deepPurple
-                    ),
-                  )
-                ],
-              ),
+            SizedBox(height: 20,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  padding: EdgeInsets.all(5),
+                  width: 200,
+                  height: 200,
+
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Image(
+                        image: AssetImage("images/music.jpg"),
+                        height: 150,
+
+                      ),
+                      Text("Shoxrux",
+                        style: TextStyle(
+                            fontSize: 22
+                        ),
+                      )
+                    ],
+                  ),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    border: Border.all(color: Colors.black,width: 5),
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.all(5),
+                  width: 200,
+                  height: 200,
+
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Image(
+                        image: AssetImage("images/own.jpg"),
+                        height: 150,
+
+                      ),
+                      Text("Shoxrux",
+                        style: TextStyle(
+                            fontSize: 22
+                        ),
+                      )
+                    ],
+                  ),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    border: Border.all(color: Colors.black,width: 5),
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                ),
+
+              ],
             ),
+            SizedBox(height: 20,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  padding: EdgeInsets.all(5),
+                  width: 200,
+                  height: 200,
+
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Image(
+                        image: AssetImage("images/own.jpg"),
+                        height: 150,
+
+                      ),
+                      Text("Shoxrux",
+                        style: TextStyle(
+                            fontSize: 22
+                        ),
+                      )
+                    ],
+                  ),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    border: Border.all(color: Colors.black,width: 5),
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.all(5),
+                  width: 200,
+                  height: 200,
+
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Image(
+                        image: AssetImage("images/own.jpg"),
+                        height: 150,
+
+                      ),
+                      Text("Shoxrux",
+                        style: TextStyle(
+                            fontSize: 22
+                        ),
+                      )
+                    ],
+                  ),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    border: Border.all(color: Colors.black,width: 5),
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                ),
+
+              ],
+            ),
+
           ],
         ),
-      )
-
-    ));
+      ),
+    );
   }
 }
+
+
