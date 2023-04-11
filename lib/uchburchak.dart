@@ -22,7 +22,7 @@ class Uchburchak extends StatelessWidget {
             children: [
               InkWell(
                 onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (c)=>const UchburchakBurchak()));
+                  Navigator.push(context, MaterialPageRoute(builder: (c)=> UchburchakBurchak()));
                 },
                 child: Container(
                   padding: EdgeInsets.all(5),
